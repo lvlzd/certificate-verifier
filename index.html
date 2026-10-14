@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Verification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app-card">
+
+        <div class="icon">✓</div>
+
+        <h1>Certificate Verification</h1>
+
+        <p class="subtitle">
+            Verify the current status of a blockchain certificate
+        </p>
+
+        <div class="verification-box">
+
+            <label for="certificateId">Certificate ID</label>
+
+            <input
+                type="number"
+                id="certificateId"
+                placeholder="e.g. 101"
+            >
+
+            <button id="verifyButton">
+                Verify Certificate
+            </button>
+
+        </div>
+
+        <div id="result" class="result hidden">
+
+            <div id="statusBadge" class="status-badge"></div>
+
+            <h2 id="status"></h2>
+
+            <div class="details">
+
+                <div class="detail-row">
+                    <span class="detail-label">Student</span>
+                    <span id="studentName"></span>
+                </div>
+
+                <div class="detail-row">
+                    <span class="detail-label">Course</span>
+                    <span id="courseName"></span>
+                </div>
+
+                <div id="reasonRow" class="detail-row hidden">
+                    <span class="detail-label">Reason</span>
+                    <span id="reason"></span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <p class="footer-text">
+            Blockchain Certificate Verification System
+        </p>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
