@@ -39,6 +39,20 @@ The project combines a simple web interface with Solidity smart contract logic t
    - NOT_FOUND
 5. Administrators can revoke existing certificates and provide a revocation reason.
 
+## Screenshots
+
+### Main Interface
+![Main Interface](main-interface.png)
+
+### Valid Certificate
+![Valid Certificate](valid-certificate.png)
+
+### Revoked Certificate
+![Revoked Certificate](revoked-certificate.png)
+
+### Certificate Not Found
+![Certificate Not Found](certificate-not-found.png)
+
 ## Smart Contract
 
 The `CertificateVerification.sol` smart contract contains the core certificate logic, including certificate storage, verification, and revocation functionality.
